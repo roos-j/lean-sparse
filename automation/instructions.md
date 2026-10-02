@@ -81,6 +81,14 @@
 - R2 (2026-10-01T22:09:20-04:00): commit and push the current work (one-off authorization for this commit/push).
 - R3–R5 (2026-10-01T22:09:20-04:00): `.gitignore` must also exclude PDFs and other TeX auxiliaries, `.tar.gz`
   archives, and `.lock` files. Raw text: `automation/raw.md` R2–R5.
+- R6 (2026-10-02T07:23:21-04:00, recording time): commit and push the completed formalization (one-off
+  authorization; done as commit 363ad5b on master).
+- R7 (2026-10-02T07:23:21-04:00, recording time): prepare the repository for a Palomar submission on a separate
+  branch `palomar`, then commit and push that branch; master must not be modified. Raw text:
+  `automation/raw.md` R6-R7. On `palomar`: `Challenge.lean`, `Solution.lean`, `comparator.json`,
+  `formalization.yaml`, README, Lake targets; the proofs of the `SimpleCpt` submodule fields in
+  `Sec1Introduction.lean` were rewritten without `simp` so that Challenge and Solution produce
+  identical auxiliary proof terms (statement unchanged).
 
 ## Current state / next step
 

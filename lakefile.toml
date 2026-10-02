@@ -1,7 +1,7 @@
 name = "lean-sparse"
 version = "0.1.0"
 keywords = ["math"]
-defaultTargets = ["LeanSparse"]
+defaultTargets = ["LeanSparse", "Challenge", "Solution"]
 
 [leanOptions]
 pp.unicode.fun = true # pretty-prints `fun a ↦ b`
@@ -16,3 +16,9 @@ rev = "v4.35.0-rc3"
 
 [[lean_lib]]
 name = "LeanSparse"
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"

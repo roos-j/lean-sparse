@@ -122,13 +122,18 @@ variable (d : ℕ) (𝕜 : Type*) [RCLike 𝕜] (B : Type*) [NormedAddCommGroup 
 /-- `𝒮_B`: the `B`-valued simple functions on `ℝ^d` with compact support (BRS §1, TeX l.409). -/
 def SimpleCpt : Submodule 𝕜 (SimpleFunc (Rd d) B) where
   carrier := {f | HasCompactSupport (f : Rd d → B)}
-  zero_mem' := by simp [HasCompactSupport.zero]
+  zero_mem' := by
+    change HasCompactSupport ⇑(0 : SimpleFunc (Rd d) B)
+    rw [SimpleFunc.coe_zero]
+    exact HasCompactSupport.zero
   add_mem' {f g} hf hg := by
-    simp only [mem_ofPred_eq, SimpleFunc.coe_add] at hf hg ⊢
-    exact hf.add hg
+    change HasCompactSupport ⇑(f + g)
+    rw [SimpleFunc.coe_add]
+    exact HasCompactSupport.add hf hg
   smul_mem' c f hf := by
-    simp only [mem_ofPred_eq, SimpleFunc.coe_smul] at hf ⊢
-    exact hf.mono (Function.support_const_smul_subset c _)
+    change HasCompactSupport ⇑(c • f)
+    rw [SimpleFunc.coe_smul]
+    exact HasCompactSupport.mono hf (Function.support_const_smul_subset c _)
 
 variable {d 𝕜 B}
 
