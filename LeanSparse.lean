@@ -6,6 +6,10 @@ Authors: Claude
 module
 
 public import LeanSparse.Auto.HardyLittlewoodMaximal
+public import LeanSparse.Auto.Sec1Introduction
+public import LeanSparse.Auto.Sec3SingleScale
+public import LeanSparse.Auto.Sec4ProofOfMainResult
+public import LeanSparse.Auto.SparseCarleson
 public import LeanSparse.Auto.WhitneyDecomposition
 
 /-!

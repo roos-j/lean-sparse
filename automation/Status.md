@@ -8,7 +8,7 @@ Format: `status | exact source location | brief mathematical step | timestamp`.
 
 | status | location | step | timestamp |
 |---|---|---|---|
-| not started | Thm 1.1 (mainthm), eq. (vectsparsebound) | ‖Σ_{N₁}^{N₂} T_j‖_{Sp_γ(p,B₁,q',B₂*)} ≲_{p,q,ε,γ,d} 𝒞 | 2026-10-01T21:57:04-04:00 |
+| complete | Thm 1.1 (mainthm), eq. (vectsparsebound) | ‖Σ_{N₁}^{N₂} T_j‖_{Sp_γ(p,B₁,q',B₂*)} ≲_{p,q,ε,γ,d} 𝒞 | 2026-10-02T01:56:21-04:00 |
 
 ## Prerequisite: Hardy–Littlewood maximal theorem (weak type (1,1))
 
@@ -36,52 +36,52 @@ Justification: needed in §4.2 (TeX l.1779–1783) to pass from the 3^{-d}γ-spa
 
 | status | location | step | timestamp |
 |---|---|---|---|
-| not started | L–N Lemma 6.3 (easy direction) | η-sparse ⇒ η⁻¹-Carleson | 2026-10-01T21:57:04-04:00 |
-| not started | L–N Lemma 6.3 | Λ-Carleson (finite laminar) ⇒ Λ⁻¹-sparse | 2026-10-01T21:57:04-04:00 |
-| not started | L–N Lemma 6.6 | splitting by depth mod M into (1+(Λ-1)/M)-Carleson families | 2026-10-01T21:57:04-04:00 |
+| complete | L–N Lemma 6.3 (easy direction) | η-sparse ⇒ η⁻¹-Carleson | 2026-10-01T22:13:39-04:00 |
+| complete | L–N Lemma 6.3 | Λ-Carleson (finite laminar) ⇒ Λ⁻¹-sparse | 2026-10-01T22:13:39-04:00 |
+| complete | L–N Lemma 6.6 | splitting by depth mod M into (1+(Λ-1)/M)-Carleson families | 2026-10-01T22:13:39-04:00 |
 
 ## Main proof
 
 | status | location | step | timestamp |
 |---|---|---|---|
-| not started | §1, TeX l.420–436 | cubes, children, 𝒟(Q), triple cube, dyadic lattice axioms (i)–(iii) | 2026-10-01T21:57:04-04:00 |
-| not started | §1, Definition (γ-sparse) | γ-sparse collections | 2026-10-01T21:57:04-04:00 |
-| not started | §1, eqs. (sparseform), (eqn:maxform) | ⟨f⟩_{Q,p,B}, Λ^𝔖_{p₁,p₂}, Λ*_{γ} | 2026-10-01T21:57:04-04:00 |
-| not started | §1, TeX l.409–417 | 𝒮_B, operator class, pairing ⟨Tf₁,f₂⟩, Lorentz quasinorms | 2026-10-01T21:57:04-04:00 |
-| not started | §1.1, TeX l.497–533 | Dil_t, Δ_h (defDeltah), basic assumptions (support-assu)–(p-q-rescaled-reg-b), 𝒞 (eqn:cCdef) | 2026-10-01T21:57:04-04:00 |
-| not started | §1.1, Thm 1.1 | Lean statement of Theorem 1.1 | 2026-10-01T21:57:04-04:00 |
-| not started | §3.1, (eqn:Tjrescale) | rescaled single-scale bound ‖T_j‖_{p→q} ≤ 2^{-jd(1/p-1/q)}A∘ | 2026-10-01T21:57:04-04:00 |
-| not started | §3.1, Lemma 3.1 (single-scale-lem) | |⟨T_j[f₁1_Q],f₂⟩| ≤ 3^{d/q'}A∘|Q|⟨f₁⟩_{Q,p}⟨f₂⟩_{3Q,q'} | 2026-10-01T21:57:04-04:00 |
-| not started | §3.3, TeX l.1459–1461 | 𝔼_n, 𝔻_n for the lattice 𝔔; L^p contractivity of 𝔼_n | 2026-10-01T21:57:04-04:00 |
-| not started | §3.3 (route E4) | 𝔻_m f as a finite sum of Δ_h-differences, |h| ≲ 2^{-m} | 2026-10-01T21:57:04-04:00 |
-| not started | §3.3 (route E4) | 𝔼_M f → f in L^p for simple f | 2026-10-01T21:57:04-04:00 |
-| not started | §3.3, Cor 3.4(i) | ‖T(I-𝔼_n)‖ ≲_ε 2^{-nε} sup_{|h|≤1}|h|^{-ε}‖TΔ_h‖ | 2026-10-01T21:57:04-04:00 |
-| not started | §3.3, Cor 3.4(ii), (Tjrega) | ‖T_j(I-𝔼_{s-j})‖ ≲ B 2^{-jd(1/p-1/q)} 2^{-εs} | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (Tjregb) | dual form of the regularity estimate for T_j^* | 2026-10-01T21:57:04-04:00 |
-| not started | §4.1, Definition 4.1 | 𝔊_{Q₀}(f₁,f₂) | 2026-10-01T21:57:04-04:00 |
-| not started | §4.1, Definition 4.2, (base-case) | induction statement and base case U(0) ≤ 3^{d/q'}A∘ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (Omdefs) | Ω, |Ω| < (1-γ)|Q₀|, E_{Q₀} | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (wh) | Whitney family 𝒲 ⊂ 𝔔 of Ω with 5 diam W ≤ dist(W,Ωᶜ) ≤ 12 diam W | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (W in Q0) | W ∩ Q₀ ≠ ∅ ⇒ W ⊊ Q₀ (and W ∩ 3Q₀ ≠ ∅ ⇒ W ⊂ 3Q₀) | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (upperboundsWh), (upperboundsWhext) | averages over cubes containing W bounded by ⟨f₁⟩_{Q₀,p}, ⟨f₂⟩_{3Q₀,q'} | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (Linfty-g), (ri-g) | L^∞ and L^{r,1} bounds for g₁, g₂ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (Lrbounds-sumsb-1/2) | L^r bounds for sums of b_{i,W} | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (first splitting), (three terms) | finite CZ decomposition and ⟨Sb₁,f₂⟩ = I + II + III (+ remainders) | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (good-fct) | |⟨Sg₁,f₂⟩| ≲ A(q)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (SWest) | term I via induction; combined γ-sparse family 𝔖_ε | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (IIest) | |II| ≲ A(q)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (eq:IIIsplitting) | III = III₁+III₂+III₃+III₄ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, III₁ | |III₁| ≲ A(p)|Q₀|⟨f₁⟩⟨f₂⟩ (weak-type pairing) | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, III₂ | |III₂| ≲ A(p)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (restriction on j) | nonzero terms of III₃ have j ≤ L(W') ≤ L(W)+2 ≤ j+2 | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, III₃ | |III₃| ≲ A∘|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (eqn:defeps'), (elldef), (eq:IVi def) | choice of ε', ℓ; III₄ = IV₁+IV₂+IV₃ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (IV1bound) | |IV₁| ≲ A∘ log(2+B/A∘)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (eq:IV2) | |IV₂| ≲ A∘|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (eq:IV3) | |IV₃| ≲ A∘|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T21:57:04-04:00 |
-| not started | §4.4, (error-claim) | bound for III | 2026-10-01T21:57:04-04:00 |
-| not started | §4.1, Claim 4.3 | U(n) ≤ max{U(n-1), c𝒞}; induction conclusion (goal la replaced) | 2026-10-01T21:57:04-04:00 |
-| not started | §4.2, (triple-cubes) | finite γ-sparse 𝔖_ε ⊂ 𝒟(Q₀) and passage to triple cubes | 2026-10-01T21:57:04-04:00 |
-| not started | §4.2, Three Lattice Thm (L–N Thm 3.1) | triple cubes of the concrete lattice lie in 3^d dyadic lattices 𝒟^{(ν)}, families 3^{-d}γ-sparse | 2026-10-01T21:57:04-04:00 |
-| not started | §4.2, TeX l.1779–1795 | sparse boosting and ≤ M3^{d/p}c𝒞 Λ*_γ | 2026-10-01T21:57:04-04:00 |
-| not started | §1.1, Thm 1.1 | proof of Theorem 1.1 | 2026-10-01T21:57:04-04:00 |
+| complete | §1, TeX l.420–436 | cubes, children, 𝒟(Q), triple cube, dyadic lattice axioms (i)–(iii) | 2026-10-01T22:17:24-04:00 |
+| complete | §1, Definition (γ-sparse) | γ-sparse collections | 2026-10-01T22:17:25-04:00 |
+| complete | §1, eqs. (sparseform), (eqn:maxform) | ⟨f⟩_{Q,p,B}, Λ^𝔖_{p₁,p₂}, Λ*_{γ} | 2026-10-01T22:17:25-04:00 |
+| complete | §1, TeX l.409–417 | 𝒮_B, operator class, pairing ⟨Tf₁,f₂⟩, Lorentz quasinorms | 2026-10-01T22:17:25-04:00 |
+| complete | §1.1, TeX l.497–533 | Dil_t, Δ_h (defDeltah), basic assumptions (support-assu)–(p-q-rescaled-reg-b), 𝒞 (eqn:cCdef) | 2026-10-01T22:17:25-04:00 |
+| complete | §1.1, Thm 1.1 | Lean statement of Theorem 1.1 | 2026-10-01T22:18:36-04:00 |
+| complete | §3.1, (eqn:Tjrescale) | rescaled single-scale bound ‖T_j‖_{p→q} ≤ 2^{-jd(1/p-1/q)}A∘ | 2026-10-01T22:27:25-04:00 |
+| complete | §3.1, Lemma 3.1 (single-scale-lem) | |⟨T_j[f₁1_Q],f₂⟩| ≤ 3^{d/q'}A∘|Q|⟨f₁⟩_{Q,p}⟨f₂⟩_{3Q,q'} | 2026-10-01T22:27:25-04:00 |
+| complete | §3.3, TeX l.1459–1461 | 𝔼_n, 𝔻_n for the lattice 𝔔; L^p contractivity of 𝔼_n | 2026-10-01T22:38:18-04:00 |
+| complete | §3.3 (route E4) | 𝔻_m f as a finite sum of Δ_h-differences, |h| ≲ 2^{-m} | 2026-10-01T22:43:22-04:00 |
+| complete | §3.3 (route E4) | 𝔼_M f → f in L^p for simple f | 2026-10-01T22:50:45-04:00 |
+| complete | §3.3, Cor 3.4(i) | ‖T(I-𝔼_n)‖ ≲_ε 2^{-nε} sup_{|h|≤1}|h|^{-ε}‖TΔ_h‖ | 2026-10-01T22:53:46-04:00 |
+| complete | §3.3, Cor 3.4(ii), (Tjrega) | ‖T_j(I-𝔼_{s-j})‖ ≲ B 2^{-jd(1/p-1/q)} 2^{-εs} | 2026-10-01T23:04:45-04:00 |
+| complete | §4.4, (Tjregb) | dual form of the regularity estimate for T_j^* | 2026-10-01T23:04:45-04:00 |
+| complete | §4.1, Definition 4.1 | 𝔊_{Q₀}(f₁,f₂) | 2026-10-01T23:27:39-04:00 |
+| complete | §4.1, Definition 4.2, (base-case) | induction statement U(n) (base case subsumed by the inductive step) | 2026-10-01T23:27:39-04:00 |
+| complete | §4.4, (Omdefs) | Ω, |Ω| < (1-γ)|Q₀|, E_{Q₀} | 2026-10-01T23:27:39-04:00 |
+| complete | §4.4, (wh) | Whitney family 𝒲 ⊂ 𝔔 of Ω with 5 diam W ≤ dist(W,Ωᶜ) ≤ 12 diam W | 2026-10-01T23:30:31-04:00 |
+| complete | §4.4, (W in Q0) | W ∩ Q₀ ≠ ∅ ⇒ W ⊊ Q₀ (and W ∩ 3Q₀ ≠ ∅ ⇒ W ⊂ 3Q₀) | 2026-10-01T23:30:31-04:00 |
+| complete | §4.4, (upperboundsWh), (upperboundsWhext) | averages over cubes containing W bounded by ⟨f₁⟩_{Q₀,p}, ⟨f₂⟩_{3Q₀,q'} | 2026-10-01T23:32:41-04:00 |
+| complete | §4.4, (Linfty-g), (ri-g) | L^∞ and L^{r,1} bounds for g₁, g₂ | 2026-10-01T23:38:37-04:00 |
+| complete | §4.4, (Lrbounds-sumsb-1/2) | L^r bounds for sums of b_{i,W} | 2026-10-01T23:38:37-04:00 |
+| complete | §4.4, (first splitting), (three terms) | finite CZ decomposition and ⟨Sb₁,f₂⟩ = I + II + III (+ remainders) | 2026-10-02T00:45:32-04:00 |
+| complete | §4.4, (good-fct) | |⟨Sg₁,f₂⟩| ≲ A(q)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-02T01:22:07-04:00 |
+| complete | §4.4, (SWest) | term I via induction; combined γ-sparse family 𝔖_ε | 2026-10-02T01:22:07-04:00 |
+| complete | §4.4, (IIest) | |II| ≲ A(q)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-02T01:22:07-04:00 |
+| complete | §4.4, (eq:IIIsplitting) | III = III₁+III₂+III₃+III₄ | 2026-10-02T00:45:32-04:00 |
+| complete | §4.4, III₁ | |III₁| ≲ A(p)|Q₀|⟨f₁⟩⟨f₂⟩ (weak-type pairing) | 2026-10-02T01:22:08-04:00 |
+| complete | §4.4, III₂ | |III₂| ≲ A(p)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-02T01:22:08-04:00 |
+| complete | §4.4, (restriction on j) | nonzero terms of III₃ have j ≤ L(W') ≤ L(W)+2 ≤ j+2 | 2026-10-01T23:45:48-04:00 |
+| complete | §4.4, III₃ | |III₃| ≲ A∘|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-01T23:49:36-04:00 |
+| complete | §4.4, (eqn:defeps'), (elldef), (eq:IVi def) | choice of ε', ℓ; III₄ = IV₁+IV₂+IV₃ | 2026-10-02T00:29:16-04:00 |
+| complete | §4.4, (IV1bound) | |IV₁| ≲ A∘ log(2+B/A∘)|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-02T00:29:16-04:00 |
+| complete | §4.4, (eq:IV2) | |IV₂| ≲ A∘|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-02T00:29:16-04:00 |
+| complete | §4.4, (eq:IV3) | |IV₃| ≲ A∘|Q₀|⟨f₁⟩⟨f₂⟩ | 2026-10-02T00:29:16-04:00 |
+| complete | §4.4, (error-claim) | bound for III | 2026-10-02T01:22:08-04:00 |
+| complete | §4.1, Claim 4.3 | U(n) ≤ max{U(n-1), c𝒞}; induction conclusion (goal la replaced) | 2026-10-02T01:22:08-04:00 |
+| complete | §4.2, (triple-cubes) | finite γ-sparse 𝔖_ε ⊂ 𝒟(Q₀) and passage to triple cubes | 2026-10-02T01:56:21-04:00 |
+| complete | §4.2, Three Lattice Thm (L–N Thm 3.1) | triple cubes of the concrete lattice lie in 3^d dyadic lattices 𝒟^{(ν)}, families 3^{-d}γ-sparse | 2026-10-02T01:56:21-04:00 |
+| complete | §4.2, TeX l.1779–1795 | sparse boosting and ≤ M3^{d/p}c𝒞 Λ*_γ | 2026-10-02T01:56:21-04:00 |
+| complete | §1.1, Thm 1.1 | proof of Theorem 1.1 | 2026-10-02T01:56:21-04:00 |

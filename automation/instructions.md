@@ -84,7 +84,14 @@
 
 ## Current state / next step
 
-- Bootstrap complete (2026-10-01): Git initialized (empty history), Mathlib cache fetched.
-- Next: `Sec1Introduction.lean` definitions (Status rows §1), then the prerequisite files in ledger
-  order.
-- Latest full build / axiom check: none yet.
+- Done (2026-10-02T01:56:21-04:00): the target is fully formalized. `Auto.mainthm`
+  (`LeanSparse/Auto/Sec4ProofOfMainResult.lean`) proves `Auto.MainTheoremStatement d p q ε γ` for
+  `0 < d`, `1 < p ≤ q`, `0 < ε`, `0 < γ < 1`, with constant `Kstep d p q ε γ · 3^d · nBoost`.
+  - §4.4 / Claim 4.3: `step_core` (inductive step) and `claim_4_3` (strong induction on `M - N₁`).
+  - §4.2: `volume_ivp`, triple lattices `tripleGrid` with `triple_protoGrid_cube`,
+    `isSparse_filter_depth` (sparse boosting), `frakG_le_maxSparseForm`; the case `A∘ = 0` is
+    handled directly (all `T_j f` vanish). Discrepancies E1–E11 in `automation/ErrorReport.md`.
+- Verification: `lake build` succeeded with no warnings or errors (2026-10-02); no `sorry`, no
+  new axioms; `#print axioms Auto.mainthm`: propext, Classical.choice, Quot.sound.
+- Next: nothing remains for the recorded target. Changes are uncommitted (see the global rule:
+  commits only on explicit instruction).

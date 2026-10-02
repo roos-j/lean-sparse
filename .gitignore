@@ -61,9 +61,6 @@ automation/raw.md
 *.pdf
 sources/
 *.lock
-# Requested by the user: PDFs, source archives, further TeX auxiliaries, lock files.
-*.pdf
-*.tar.gz
 *.tgz
 *.gz
 *.ps
@@ -83,4 +80,3 @@ sources/
 *.tdo
 *.upa
 *.upb
-*.lock

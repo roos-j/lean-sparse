@@ -56,3 +56,46 @@ Source: arXiv:2009.00227 (TeX `sources/BeltranRoosSeeger2024Memoirs-arxiv.tex`).
   U_i are open sets of small measure containing {|f_i| > c_i} (outer regularity), with the
   numerical constants adjusted so that |Ω| < (1-γ)|Q₀|. The properties used later
   ((W in Q0), (upperboundsWh), (Linfty-g)) are unchanged. Resolved (minor repair).
+
+## E7 — 2026-10-01T22:34:30-04:00 — constant in Corollary 3.4 (§3.3, Cor 3.4(i)(ii), (Tjrega), (Tjregb))
+
+- Source: ‖T(I-𝔼_n)‖ ≲ 2^{-nϑ} sup_{|h|<1}|h|^{-ϑ}‖TΔ_h‖, so (Tjrega) with constant B only. The proof
+  via (reg1) uses sup_{k≥0}2^{kϑ}‖TΛ_k‖, whose k = 0 term is controlled by ‖T‖ (cf. (eqn:diff-LP)),
+  not by the Δ_h-supremum; in the Haar route the few martingale levels with translation length
+  |h| > 2^j likewise need the single-scale bound.
+- Formalization: (Tjrega)/(Tjregb) are proved with B replaced by B + A∘(p,q) (constants depending on
+  d, ε). In the estimate of IV₂, IV₃ this gives (B + A∘)2^{-ε'ℓ}(ℓ+1)² ≲ A∘, so Theorem 1.1 and 𝒞
+  are unchanged. Resolved.
+
+## E8 — 2026-10-01T22:34:30-04:00 — measurability conventions (§1)
+
+- Source: simple functions and the sets E_Q in the definition of sparseness are Lebesgue measurable.
+- Formalization: Borel measurable. Every Lebesgue measurable set contains a Borel set of the same
+  measure, and the operators respect a.e. equality (by the norm hypotheses), so the notions agree.
+  Resolved (convention).
+
+## E9 — 2026-10-01T23:27:39-04:00 — dimension d ≥ 1 (§1)
+
+- Source: works in ℝ^d, implicitly d ≥ 1.
+- Formalization: the final theorem assumes 0 < d (for d = 0 distinct lattice cubes coincide as
+  sets, which the Whitney bookkeeping uses). Resolved (convention).
+
+## E10 — 2026-10-01T23:27:39-04:00 — base case and padding (§4.1–§4.2, (base-case))
+
+- Source: induction on N₂ - N₁ with Q₀ of side 2^{N₂}; base case via Lemma 3.1; §4.2 pads with zero
+  operators to reach a cube of side 2^{L(Q₀)}, L(Q₀) ≥ N₂.
+- Formalization: induction on M - N₁ for N₁ ≤ N₂ ≤ M with Q₀ of side 2^M and
+  S_W = ∑_{j ∈ [N₁, N₂], j ≤ L(W)} T_j; this is the padded statement directly, and the inductive
+  step needs no separate base case. Resolved (equivalent organisation).
+
+## E11 — 2026-10-02T01:56:21-04:00 — Three Lattice Theorem and sparse boosting (§4.2, TeX l.1771–1795)
+
+- Source: quotes the Three Lattice Theorem (Lerner–Nazarov Thm 3.1) for a general dyadic lattice
+  and Lemmas 6.3, 6.6 of Lerner–Nazarov, which use that Lebesgue measure takes all intermediate
+  values on subsets.
+- Formalization: proves the Three Lattice statement directly for the prototype lattice: the triple
+  of the level-L cube with index t lies in the grid lattice `tripleGrid ν` (side 3·2^L, offsets
+  (-1)^L(3(ν+L)+1)/9), where ν_i = ((-1)^L(t_i-1) - L) mod 3. The intermediate-value property is
+  proved via A ∩ B(0,r) and the intermediate value theorem (`volume_ivp`). The constant is
+  K = Kstep · 3^d · M with M = ⌈1/(3^{-d}γ(1-γ))⌉ + 1, using |Q|⟨f₁⟩_{Q,p} ≤ |3Q|⟨f₁⟩_{3Q,p}
+  (instead of the factor 3^{d/p-d}, which is ≤ 1). Resolved (supplied proofs; same statement).
